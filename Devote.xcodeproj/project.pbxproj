@@ -17,6 +17,8 @@
 		2409867327CB5DDF00AE9B67 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2409867027CB5DDF00AE9B67 /* sound-ding.mp3 */; };
 		2409867427CB5DDF00AE9B67 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2409867127CB5DDF00AE9B67 /* sound-rise.mp3 */; };
 		2409867E27CB61FC00AE9B67 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2409867D27CB61FC00AE9B67 /* Launch Screen.storyboard */; };
+		2409868027CC714000AE9B67 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409867F27CC714000AE9B67 /* Constant.swift */; };
+		2409868227CC7A3100AE9B67 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409868127CC7A3100AE9B67 /* HideKeyboardExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		2409867027CB5DDF00AE9B67 /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
 		2409867127CB5DDF00AE9B67 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		2409867D27CB61FC00AE9B67 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		2409867F27CC714000AE9B67 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		2409868127CC7A3100AE9B67 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 		2409867827CB5E2500AE9B67 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				2409868127CC7A3100AE9B67 /* HideKeyboardExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 		2409867927CB5E3300AE9B67 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				2409867F27CC714000AE9B67 /* Constant.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -217,6 +223,8 @@
 			files = (
 				2409866627CB5CEC00AE9B67 /* Persistence.swift in Sources */,
 				2409865F27CB5CE800AE9B67 /* ContentView.swift in Sources */,
+				2409868227CC7A3100AE9B67 /* HideKeyboardExtension.swift in Sources */,
+				2409868027CC714000AE9B67 /* Constant.swift in Sources */,
 				2409866927CB5CEC00AE9B67 /* Devote.xcdatamodeld in Sources */,
 				2409865D27CB5CE800AE9B67 /* DevoteApp.swift in Sources */,
 			);
