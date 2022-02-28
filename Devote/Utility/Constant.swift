@@ -16,4 +16,5 @@ let itemFormatter: DateFormatter = {
 }()
 
 // MARK: - UI
-let backgroundGradient: LinearGradient = LinearGradient(gradient: Gradient(colors: [Color.pink, Color.blue]), startPoint: .topLeading, endPoint: .bottomTrailing)
+let gradientColors: Gradient = Gradient(colors: [Color.pink, Color.blue])
+let backgroundGradient: LinearGradient = LinearGradient(gradient: gradientColors, startPoint: .topLeading, endPoint: .bottomTrailing)
