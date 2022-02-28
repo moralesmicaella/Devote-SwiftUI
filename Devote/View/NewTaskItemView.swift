@@ -50,7 +50,7 @@ struct NewTaskItemView: View {
           .font(.system(size: 24, weight: .bold, design: .rounded))
           .padding()
           .background(
-            Color(UIColor.systemGray6)
+            Color("textFieldColor")
           )
           .cornerRadius(10)
         
@@ -72,7 +72,7 @@ struct NewTaskItemView: View {
       } //: VStack
       .padding(.horizontal)
       .padding(.vertical, 20)
-      .background(Color.white)
+      .background(Color("popUpColor"))
       .cornerRadius(16)
       .shadow(color: .black.opacity(0.65), radius: 24)
       .frame(maxWidth: 640)

@@ -17,6 +17,8 @@ struct ContentView: View {
     animation: .default)
   private var items: FetchedResults<Item>
   
+  @AppStorage("isDarkMode") private var isDarkMode: Bool = false
+  
   @State private var task: String = ""
   @State var showNewTaskItem: Bool = false
   
@@ -41,6 +43,34 @@ struct ContentView: View {
         // MARK: - MAIN VIEW
         VStack {
           // MARK: - HEADER
+          HStack(spacing: 10) {
+            Text("Devote")
+              .font(.system(.largeTitle, design: .rounded))
+              .fontWeight(.heavy)
+              .padding(.leading, 4)
+            
+            Spacer()
+            
+            EditButton()
+              .buttonStyle(.plain)
+              .font(.system(size: 16, weight: .semibold, design: .rounded))
+              .padding(.horizontal, 10)
+              .frame(minWidth: 70, minHeight: 24)
+              .background(Capsule().stroke(Color.white, lineWidth: 2))
+            
+            Button(action: {
+              isDarkMode.toggle()
+            }) {
+              Image(systemName: isDarkMode ? "moon.circle.fill" : "moon.circle")
+                .resizable()
+                .frame(width: 24, height: 24)
+                .font(.system(.title, design: .rounded))
+            }
+          }
+          .buttonStyle(.plain)
+          .padding()
+          .foregroundColor(.white)
+          
           Spacer(minLength: 80)
           
           // MARK: - NEW TASK BUTTON
@@ -100,14 +130,7 @@ struct ContentView: View {
       .onAppear(perform: {
         UITableView.appearance().backgroundColor = UIColor.clear
       })
-      .navigationTitle("Daily Tasks")
-      .navigationBarTitleDisplayMode(.large)
-      .toolbar {
-        ToolbarItem(placement: .navigationBarTrailing) {
-          EditButton()
-            .buttonStyle(.plain)
-        }
-      } //: TOOLBAR
+      .navigationBarHidden(true)
       .background(BackgroundImageView())
       .background(backgroundGradient.ignoresSafeArea())
     } //: NAVIGATION VIEW
