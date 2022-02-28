@@ -18,3 +18,6 @@ let itemFormatter: DateFormatter = {
 // MARK: - UI
 let gradientColors: Gradient = Gradient(colors: [Color.pink, Color.blue])
 let backgroundGradient: LinearGradient = LinearGradient(gradient: gradientColors, startPoint: .topLeading, endPoint: .bottomTrailing)
+
+// MARK: - UX
+let feedback = UINotificationFeedbackGenerator()
