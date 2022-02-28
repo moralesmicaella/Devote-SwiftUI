@@ -96,16 +96,8 @@ struct ContentView: View {
           // MARK: - TASKS
           List {
             ForEach(items) { item in
-              VStack(alignment: .leading) {
-                Text(item.task ?? "")
-                  .font(.headline)
-                  .fontWeight(.bold)
-                
-                Text(item.timestamp!, formatter: itemFormatter)
-                  .font(.footnote)
-                  .foregroundColor(.gray)
-              }
-            } //: LIST ITEM
+              ListRowItemView(item: item)
+            }
             .onDelete(perform: deleteItems)
           } //: LIST
           .shadow(color: .black.opacity(0.3), radius: 12)
