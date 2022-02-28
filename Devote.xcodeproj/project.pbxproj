@@ -19,6 +19,7 @@
 		2409867E27CB61FC00AE9B67 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2409867D27CB61FC00AE9B67 /* Launch Screen.storyboard */; };
 		2409868027CC714000AE9B67 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409867F27CC714000AE9B67 /* Constant.swift */; };
 		2409868227CC7A3100AE9B67 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409868127CC7A3100AE9B67 /* HideKeyboardExtension.swift */; };
+		2409868427CC82B200AE9B67 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409868327CC82B200AE9B67 /* BackgroundImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		2409867D27CB61FC00AE9B67 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		2409867F27CC714000AE9B67 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		2409868127CC7A3100AE9B67 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
+		2409868327CC82B200AE9B67 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				2409865E27CB5CE800AE9B67 /* ContentView.swift */,
+				2409868327CC82B200AE9B67 /* BackgroundImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2409866627CB5CEC00AE9B67 /* Persistence.swift in Sources */,
+				2409868427CC82B200AE9B67 /* BackgroundImageView.swift in Sources */,
 				2409865F27CB5CE800AE9B67 /* ContentView.swift in Sources */,
 				2409868227CC7A3100AE9B67 /* HideKeyboardExtension.swift in Sources */,
 				2409868027CC714000AE9B67 /* Constant.swift in Sources */,
